@@ -15,8 +15,8 @@ export let options = {
         { duration: '10s', target: 0 },
     ],
     thresholds: {
-        'http_req_duration': ['p(85)<500'], 
-        'my_trend': ['avg<300'],
+        'http_req_duration': ['p(85)<500'], //85% of the HTTP requests must have a duration of less than 500 milliseconds
+        'my_trend': ['avg<300'],  //average response time 
     },
     // Output to Prometheus (exposing the metrics on localhost:6565)
     // ext: {
